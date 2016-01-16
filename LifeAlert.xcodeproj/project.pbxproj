@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB18012F1C4AEDC800AC15A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18012E1C4AEDC800AC15A8 /* AppDelegate.swift */; };
+		CB1801311C4AEDC800AC15A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1801301C4AEDC800AC15A8 /* ViewController.swift */; };
+		CB1801341C4AEDC800AC15A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1801321C4AEDC800AC15A8 /* Main.storyboard */; };
+		CB1801361C4AEDC800AC15A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB1801351C4AEDC800AC15A8 /* Assets.xcassets */; };
+		CB1801391C4AEDC800AC15A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1801371C4AEDC800AC15A8 /* LaunchScreen.storyboard */; };
+		CB1801441C4AEDC900AC15A8 /* LifeAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1801431C4AEDC900AC15A8 /* LifeAlertTests.swift */; };
+		CB18014F1C4AEDC900AC15A8 /* LifeAlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18014E1C4AEDC900AC15A8 /* LifeAlertUITests.swift */; };
+		CB18015D1C4AEE2B00AC15A8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB18015C1C4AEE2B00AC15A8 /* Parse.framework */; };
+		CB18015F1C4AEE3E00AC15A8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB18015E1C4AEE3E00AC15A8 /* Bolts.framework */; };
+		CB1801611C4AEE5D00AC15A8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1801601C4AEE5D00AC15A8 /* AudioToolbox.framework */; };
+		CB1801631C4AEE6B00AC15A8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1801621C4AEE6B00AC15A8 /* CFNetwork.framework */; };
+		CB1801651C4AEE7500AC15A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1801641C4AEE7500AC15A8 /* CoreGraphics.framework */; };
+		CB1801671C4AEE7F00AC15A8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1801661C4AEE7F00AC15A8 /* CoreLocation.framework */; };
+		CB1801691C4AEE8800AC15A8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1801681C4AEE8800AC15A8 /* QuartzCore.framework */; };
+		CB18016B1C4AEE9B00AC15A8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB18016A1C4AEE9B00AC15A8 /* Security.framework */; };
+		CB18016D1C4AEEA300AC15A8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB18016C1C4AEEA300AC15A8 /* StoreKit.framework */; };
+		CB18016F1C4AEEAF00AC15A8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB18016E1C4AEEAF00AC15A8 /* SystemConfiguration.framework */; };
+		CB1801711C4AEEB900AC15A8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1801701C4AEEB900AC15A8 /* libz.tbd */; };
+		CB1801731C4AEEC400AC15A8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1801721C4AEEC400AC15A8 /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB1801401C4AEDC900AC15A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB1801231C4AEDC800AC15A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB18012A1C4AEDC800AC15A8;
+			remoteInfo = LifeAlert;
+		};
+		CB18014B1C4AEDC900AC15A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB1801231C4AEDC800AC15A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB18012A1C4AEDC800AC15A8;
+			remoteInfo = LifeAlert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB18012B1C4AEDC800AC15A8 /* LifeAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB18012E1C4AEDC800AC15A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB1801301C4AEDC800AC15A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB1801331C4AEDC800AC15A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB1801351C4AEDC800AC15A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB1801381C4AEDC800AC15A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB18013A1C4AEDC800AC15A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB18013F1C4AEDC900AC15A8 /* LifeAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1801431C4AEDC900AC15A8 /* LifeAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeAlertTests.swift; sourceTree = "<group>"; };
+		CB1801451C4AEDC900AC15A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB18014A1C4AEDC900AC15A8 /* LifeAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB18014E1C4AEDC900AC15A8 /* LifeAlertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeAlertUITests.swift; sourceTree = "<group>"; };
+		CB1801501C4AEDC900AC15A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB18015C1C4AEE2B00AC15A8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = LifeAlert/Parse.framework; sourceTree = "<group>"; };
+		CB18015E1C4AEE3E00AC15A8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = LifeAlert/Bolts.framework; sourceTree = "<group>"; };
+		CB1801601C4AEE5D00AC15A8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CB1801621C4AEE6B00AC15A8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CB1801641C4AEE7500AC15A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CB1801661C4AEE7F00AC15A8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CB1801681C4AEE8800AC15A8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CB18016A1C4AEE9B00AC15A8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CB18016C1C4AEEA300AC15A8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CB18016E1C4AEEAF00AC15A8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CB1801701C4AEEB900AC15A8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CB1801721C4AEEC400AC15A8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB1801281C4AEDC800AC15A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1801731C4AEEC400AC15A8 /* libsqlite3.tbd in Frameworks */,
+				CB1801711C4AEEB900AC15A8 /* libz.tbd in Frameworks */,
+				CB18016F1C4AEEAF00AC15A8 /* SystemConfiguration.framework in Frameworks */,
+				CB18016D1C4AEEA300AC15A8 /* StoreKit.framework in Frameworks */,
+				CB18016B1C4AEE9B00AC15A8 /* Security.framework in Frameworks */,
+				CB1801691C4AEE8800AC15A8 /* QuartzCore.framework in Frameworks */,
+				CB1801671C4AEE7F00AC15A8 /* CoreLocation.framework in Frameworks */,
+				CB1801651C4AEE7500AC15A8 /* CoreGraphics.framework in Frameworks */,
+				CB1801631C4AEE6B00AC15A8 /* CFNetwork.framework in Frameworks */,
+				CB1801611C4AEE5D00AC15A8 /* AudioToolbox.framework in Frameworks */,
+				CB18015D1C4AEE2B00AC15A8 /* Parse.framework in Frameworks */,
+				CB18015F1C4AEE3E00AC15A8 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB18013C1C4AEDC900AC15A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1801471C4AEDC900AC15A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB1801221C4AEDC800AC15A8 = {
+			isa = PBXGroup;
+			children = (
+				CB1801741C4AEEE500AC15A8 /* Framework */,
+				CB18012D1C4AEDC800AC15A8 /* LifeAlert */,
+				CB1801421C4AEDC900AC15A8 /* LifeAlertTests */,
+				CB18014D1C4AEDC900AC15A8 /* LifeAlertUITests */,
+				CB18012C1C4AEDC800AC15A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB18012C1C4AEDC800AC15A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB18012B1C4AEDC800AC15A8 /* LifeAlert.app */,
+				CB18013F1C4AEDC900AC15A8 /* LifeAlertTests.xctest */,
+				CB18014A1C4AEDC900AC15A8 /* LifeAlertUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB18012D1C4AEDC800AC15A8 /* LifeAlert */ = {
+			isa = PBXGroup;
+			children = (
+				CB18012E1C4AEDC800AC15A8 /* AppDelegate.swift */,
+				CB1801301C4AEDC800AC15A8 /* ViewController.swift */,
+				CB1801321C4AEDC800AC15A8 /* Main.storyboard */,
+				CB1801351C4AEDC800AC15A8 /* Assets.xcassets */,
+				CB1801371C4AEDC800AC15A8 /* LaunchScreen.storyboard */,
+				CB18013A1C4AEDC800AC15A8 /* Info.plist */,
+			);
+			path = LifeAlert;
+			sourceTree = "<group>";
+		};
+		CB1801421C4AEDC900AC15A8 /* LifeAlertTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB1801431C4AEDC900AC15A8 /* LifeAlertTests.swift */,
+				CB1801451C4AEDC900AC15A8 /* Info.plist */,
+			);
+			path = LifeAlertTests;
+			sourceTree = "<group>";
+		};
+		CB18014D1C4AEDC900AC15A8 /* LifeAlertUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB18014E1C4AEDC900AC15A8 /* LifeAlertUITests.swift */,
+				CB1801501C4AEDC900AC15A8 /* Info.plist */,
+			);
+			path = LifeAlertUITests;
+			sourceTree = "<group>";
+		};
+		CB1801741C4AEEE500AC15A8 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				CB18015C1C4AEE2B00AC15A8 /* Parse.framework */,
+				CB18015E1C4AEE3E00AC15A8 /* Bolts.framework */,
+				CB1801721C4AEEC400AC15A8 /* libsqlite3.tbd */,
+				CB1801701C4AEEB900AC15A8 /* libz.tbd */,
+				CB18016E1C4AEEAF00AC15A8 /* SystemConfiguration.framework */,
+				CB18016C1C4AEEA300AC15A8 /* StoreKit.framework */,
+				CB18016A1C4AEE9B00AC15A8 /* Security.framework */,
+				CB1801681C4AEE8800AC15A8 /* QuartzCore.framework */,
+				CB1801661C4AEE7F00AC15A8 /* CoreLocation.framework */,
+				CB1801641C4AEE7500AC15A8 /* CoreGraphics.framework */,
+				CB1801621C4AEE6B00AC15A8 /* CFNetwork.framework */,
+				CB1801601C4AEE5D00AC15A8 /* AudioToolbox.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB18012A1C4AEDC800AC15A8 /* LifeAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB1801531C4AEDC900AC15A8 /* Build configuration list for PBXNativeTarget "LifeAlert" */;
+			buildPhases = (
+				CB1801271C4AEDC800AC15A8 /* Sources */,
+				CB1801281C4AEDC800AC15A8 /* Frameworks */,
+				CB1801291C4AEDC800AC15A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeAlert;
+			productName = LifeAlert;
+			productReference = CB18012B1C4AEDC800AC15A8 /* LifeAlert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB18013E1C4AEDC900AC15A8 /* LifeAlertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB1801561C4AEDC900AC15A8 /* Build configuration list for PBXNativeTarget "LifeAlertTests" */;
+			buildPhases = (
+				CB18013B1C4AEDC900AC15A8 /* Sources */,
+				CB18013C1C4AEDC900AC15A8 /* Frameworks */,
+				CB18013D1C4AEDC900AC15A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB1801411C4AEDC900AC15A8 /* PBXTargetDependency */,
+			);
+			name = LifeAlertTests;
+			productName = LifeAlertTests;
+			productReference = CB18013F1C4AEDC900AC15A8 /* LifeAlertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB1801491C4AEDC900AC15A8 /* LifeAlertUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB1801591C4AEDC900AC15A8 /* Build configuration list for PBXNativeTarget "LifeAlertUITests" */;
+			buildPhases = (
+				CB1801461C4AEDC900AC15A8 /* Sources */,
+				CB1801471C4AEDC900AC15A8 /* Frameworks */,
+				CB1801481C4AEDC900AC15A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB18014C1C4AEDC900AC15A8 /* PBXTargetDependency */,
+			);
+			name = LifeAlertUITests;
+			productName = LifeAlertUITests;
+			productReference = CB18014A1C4AEDC900AC15A8 /* LifeAlertUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB1801231C4AEDC800AC15A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Yu-Kuan (Anthony) Lai";
+				TargetAttributes = {
+					CB18012A1C4AEDC800AC15A8 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = XL5FU698JV;
+					};
+					CB18013E1C4AEDC900AC15A8 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = XL5FU698JV;
+						TestTargetID = CB18012A1C4AEDC800AC15A8;
+					};
+					CB1801491C4AEDC900AC15A8 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = XL5FU698JV;
+						TestTargetID = CB18012A1C4AEDC800AC15A8;
+					};
+				};
+			};
+			buildConfigurationList = CB1801261C4AEDC800AC15A8 /* Build configuration list for PBXProject "LifeAlert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB1801221C4AEDC800AC15A8;
+			productRefGroup = CB18012C1C4AEDC800AC15A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB18012A1C4AEDC800AC15A8 /* LifeAlert */,
+				CB18013E1C4AEDC900AC15A8 /* LifeAlertTests */,
+				CB1801491C4AEDC900AC15A8 /* LifeAlertUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB1801291C4AEDC800AC15A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1801391C4AEDC800AC15A8 /* LaunchScreen.storyboard in Resources */,
+				CB1801361C4AEDC800AC15A8 /* Assets.xcassets in Resources */,
+				CB1801341C4AEDC800AC15A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB18013D1C4AEDC900AC15A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1801481C4AEDC900AC15A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB1801271C4AEDC800AC15A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1801311C4AEDC800AC15A8 /* ViewController.swift in Sources */,
+				CB18012F1C4AEDC800AC15A8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB18013B1C4AEDC900AC15A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1801441C4AEDC900AC15A8 /* LifeAlertTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1801461C4AEDC900AC15A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB18014F1C4AEDC900AC15A8 /* LifeAlertUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB1801411C4AEDC900AC15A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB18012A1C4AEDC800AC15A8 /* LifeAlert */;
+			targetProxy = CB1801401C4AEDC900AC15A8 /* PBXContainerItemProxy */;
+		};
+		CB18014C1C4AEDC900AC15A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB18012A1C4AEDC800AC15A8 /* LifeAlert */;
+			targetProxy = CB18014B1C4AEDC900AC15A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB1801321C4AEDC800AC15A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB1801331C4AEDC800AC15A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB1801371C4AEDC800AC15A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB1801381C4AEDC800AC15A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB1801511C4AEDC900AC15A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB1801521C4AEDC900AC15A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB1801541C4AEDC900AC15A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LifeAlert",
+				);
+				INFOPLIST_FILE = LifeAlert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theAnthonylai.LifeAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB1801551C4AEDC900AC15A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LifeAlert",
+				);
+				INFOPLIST_FILE = LifeAlert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theAnthonylai.LifeAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB1801571C4AEDC900AC15A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LifeAlertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theAnthonylai.LifeAlertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeAlert.app/LifeAlert";
+			};
+			name = Debug;
+		};
+		CB1801581C4AEDC900AC15A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LifeAlertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theAnthonylai.LifeAlertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeAlert.app/LifeAlert";
+			};
+			name = Release;
+		};
+		CB18015A1C4AEDC900AC15A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LifeAlertUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theAnthonylai.LifeAlertUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LifeAlert;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CB18015B1C4AEDC900AC15A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LifeAlertUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theAnthonylai.LifeAlertUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LifeAlert;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB1801261C4AEDC800AC15A8 /* Build configuration list for PBXProject "LifeAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB1801511C4AEDC900AC15A8 /* Debug */,
+				CB1801521C4AEDC900AC15A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB1801531C4AEDC900AC15A8 /* Build configuration list for PBXNativeTarget "LifeAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB1801541C4AEDC900AC15A8 /* Debug */,
+				CB1801551C4AEDC900AC15A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB1801561C4AEDC900AC15A8 /* Build configuration list for PBXNativeTarget "LifeAlertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB1801571C4AEDC900AC15A8 /* Debug */,
+				CB1801581C4AEDC900AC15A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB1801591C4AEDC900AC15A8 /* Build configuration list for PBXNativeTarget "LifeAlertUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB18015A1C4AEDC900AC15A8 /* Debug */,
+				CB18015B1C4AEDC900AC15A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB1801231C4AEDC800AC15A8 /* Project object */;
+}

@@ -228,38 +228,76 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="body_background" translatesAutoresizingMaskIntoConstraints="NO" id="URq-a0-nco">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u98-aC-Mog">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="59c-El-T6f"/>
+                                    <constraint firstAttribute="width" constant="40" id="scZ-f9-ld2"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="alert_indicator"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="59c-El-T6f"/>
+                                        <exclude reference="scZ-f9-ld2"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="59c-El-T6f"/>
+                                        <include reference="scZ-f9-ld2"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="leftShoulderPressed:" destination="gAO-Wh-Jn5" eventType="touchUpInside" id="kyT-eV-Uey"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="R7t-3S-QX9" firstAttribute="top" secondItem="URq-a0-nco" secondAttribute="bottom" id="Ldt-Ow-LDL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="URq-a0-nco" secondAttribute="trailing" constant="-20" id="Up5-dT-anA"/>
                             <constraint firstItem="URq-a0-nco" firstAttribute="top" secondItem="BHl-T3-Hgo" secondAttribute="topMargin" id="V24-2W-4ov"/>
+                            <constraint firstItem="u98-aC-Mog" firstAttribute="top" secondItem="kMG-S2-cf2" secondAttribute="bottom" constant="216" id="d8S-dE-nNq">
+                                <variation key="heightClass=regular-widthClass=compact" constant="146"/>
+                            </constraint>
                             <constraint firstItem="URq-a0-nco" firstAttribute="leading" secondItem="BHl-T3-Hgo" secondAttribute="leadingMargin" constant="-20" id="mgR-40-qsF"/>
+                            <constraint firstItem="u98-aC-Mog" firstAttribute="leading" secondItem="BHl-T3-Hgo" secondAttribute="leadingMargin" constant="77" id="t10-mX-aCA">
+                                <variation key="heightClass=regular-widthClass=compact" constant="83"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="URq-a0-nco"/>
+                                <exclude reference="u98-aC-Mog"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Up5-dT-anA"/>
                                 <exclude reference="V24-2W-4ov"/>
                                 <exclude reference="mgR-40-qsF"/>
+                                <exclude reference="d8S-dE-nNq"/>
+                                <exclude reference="t10-mX-aCA"/>
                                 <exclude reference="Ldt-Ow-LDL"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="URq-a0-nco"/>
+                                <include reference="u98-aC-Mog"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Up5-dT-anA"/>
                                 <include reference="V24-2W-4ov"/>
                                 <include reference="mgR-40-qsF"/>
+                                <include reference="d8S-dE-nNq"/>
+                                <include reference="t10-mX-aCA"/>
                                 <include reference="Ldt-Ow-LDL"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="View Patient" id="cTW-9w-u2f"/>
+                    <connections>
+                        <outlet property="leftShoulder" destination="u98-aC-Mog" id="tw0-RS-j3l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ss9-Ha-jhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -285,6 +323,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="alert_indicator" width="78" height="78"/>
         <image name="body_background" width="1125" height="2001"/>
     </resources>
 </document>

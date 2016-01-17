@@ -251,35 +251,6 @@
                                     <action selector="leftShoulderPressed:" destination="gAO-Wh-Jn5" eventType="touchUpInside" id="kyT-eV-Uey"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTQ-Vr-ct8">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="LOG-bi-GWL"/>
-                                    <constraint firstAttribute="height" constant="40" id="qz4-vL-S6E"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="saE-3R-xzL"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="u2A-qg-Czz"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="alert_indicator"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="LOG-bi-GWL"/>
-                                        <exclude reference="qz4-vL-S6E"/>
-                                        <exclude reference="saE-3R-xzL"/>
-                                        <exclude reference="u2A-qg-Czz"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="LOG-bi-GWL"/>
-                                        <include reference="qz4-vL-S6E"/>
-                                        <include reference="saE-3R-xzL"/>
-                                        <include reference="u2A-qg-Czz"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="leftShoulderPressed:" destination="gAO-Wh-Jn5" eventType="touchUpInside" id="3qH-vP-HZf"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMF-6L-yfl">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
@@ -309,14 +280,80 @@
                                     <action selector="leftShoulderPressed:" destination="gAO-Wh-Jn5" eventType="touchUpInside" id="lgm-hB-zkd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTQ-Vr-ct8">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="LOG-bi-GWL"/>
+                                    <constraint firstAttribute="height" constant="40" id="qz4-vL-S6E"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="saE-3R-xzL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="u2A-qg-Czz"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="alert_indicator"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LOG-bi-GWL"/>
+                                        <exclude reference="qz4-vL-S6E"/>
+                                        <exclude reference="saE-3R-xzL"/>
+                                        <exclude reference="u2A-qg-Czz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="LOG-bi-GWL"/>
+                                        <include reference="qz4-vL-S6E"/>
+                                        <include reference="saE-3R-xzL"/>
+                                        <include reference="u2A-qg-Czz"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="leftShoulderPressed:" destination="gAO-Wh-Jn5" eventType="touchUpInside" id="3qH-vP-HZf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cg-4C-g6s">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="DqQ-es-p4F"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="JRK-Dl-7KR"/>
+                                    <constraint firstAttribute="width" constant="40" id="M7X-QG-Swc"/>
+                                    <constraint firstAttribute="height" constant="40" id="PcL-Rz-cYh"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="gYl-Q6-8mo"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="wtL-dy-Sqk"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="safe_indicator"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DqQ-es-p4F"/>
+                                        <exclude reference="JRK-Dl-7KR"/>
+                                        <exclude reference="M7X-QG-Swc"/>
+                                        <exclude reference="PcL-Rz-cYh"/>
+                                        <exclude reference="gYl-Q6-8mo"/>
+                                        <exclude reference="wtL-dy-Sqk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="DqQ-es-p4F"/>
+                                        <include reference="JRK-Dl-7KR"/>
+                                        <include reference="M7X-QG-Swc"/>
+                                        <include reference="PcL-Rz-cYh"/>
+                                        <include reference="gYl-Q6-8mo"/>
+                                        <include reference="wtL-dy-Sqk"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="leftShoulderPressed:" destination="gAO-Wh-Jn5" eventType="touchUpInside" id="jvH-kK-wWu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OMF-6L-yfl" firstAttribute="leading" secondItem="BHl-T3-Hgo" secondAttribute="leadingMargin" constant="83" id="213-Tf-gTm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Cg-4C-g6s" secondAttribute="trailing" constant="82" id="5va-hO-aAm"/>
                             <constraint firstItem="R7t-3S-QX9" firstAttribute="top" secondItem="URq-a0-nco" secondAttribute="bottom" id="Ldt-Ow-LDL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="URq-a0-nco" secondAttribute="trailing" constant="-20" id="Up5-dT-anA"/>
                             <constraint firstItem="cTQ-Vr-ct8" firstAttribute="top" secondItem="kMG-S2-cf2" secondAttribute="bottom" constant="146" id="Upw-dQ-Kfi"/>
                             <constraint firstItem="URq-a0-nco" firstAttribute="top" secondItem="BHl-T3-Hgo" secondAttribute="topMargin" id="V24-2W-4ov"/>
+                            <constraint firstItem="4Cg-4C-g6s" firstAttribute="top" secondItem="kMG-S2-cf2" secondAttribute="bottom" constant="146" id="chL-4Z-30e"/>
                             <constraint firstItem="u98-aC-Mog" firstAttribute="top" secondItem="kMG-S2-cf2" secondAttribute="bottom" constant="216" id="d8S-dE-nNq">
                                 <variation key="heightClass=regular-widthClass=compact" constant="146"/>
                             </constraint>
@@ -331,8 +368,9 @@
                             <mask key="subviews">
                                 <exclude reference="URq-a0-nco"/>
                                 <exclude reference="u98-aC-Mog"/>
-                                <exclude reference="cTQ-Vr-ct8"/>
                                 <exclude reference="OMF-6L-yfl"/>
+                                <exclude reference="cTQ-Vr-ct8"/>
+                                <exclude reference="4Cg-4C-g6s"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Up5-dT-anA"/>
@@ -342,6 +380,8 @@
                                 <exclude reference="nyB-Hx-BFt"/>
                                 <exclude reference="d8S-dE-nNq"/>
                                 <exclude reference="t10-mX-aCA"/>
+                                <exclude reference="5va-hO-aAm"/>
+                                <exclude reference="chL-4Z-30e"/>
                                 <exclude reference="Upw-dQ-Kfi"/>
                                 <exclude reference="st9-FQ-PW1"/>
                                 <exclude reference="Ldt-Ow-LDL"/>
@@ -351,8 +391,9 @@
                             <mask key="subviews">
                                 <include reference="URq-a0-nco"/>
                                 <include reference="u98-aC-Mog"/>
-                                <include reference="cTQ-Vr-ct8"/>
                                 <include reference="OMF-6L-yfl"/>
+                                <include reference="cTQ-Vr-ct8"/>
+                                <include reference="4Cg-4C-g6s"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Up5-dT-anA"/>
@@ -362,6 +403,8 @@
                                 <include reference="nyB-Hx-BFt"/>
                                 <include reference="d8S-dE-nNq"/>
                                 <include reference="t10-mX-aCA"/>
+                                <include reference="5va-hO-aAm"/>
+                                <include reference="chL-4Z-30e"/>
                                 <include reference="Upw-dQ-Kfi"/>
                                 <include reference="st9-FQ-PW1"/>
                                 <include reference="Ldt-Ow-LDL"/>
@@ -370,8 +413,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="View Patient" id="cTW-9w-u2f"/>
                     <connections>
-                        <outlet property="leftShoulder" destination="u98-aC-Mog" id="tw0-RS-j3l"/>
+                        <outlet property="leftShoulderAlert" destination="u98-aC-Mog" id="fUj-nm-stf"/>
                         <outlet property="leftShoulderSafe" destination="OMF-6L-yfl" id="FVb-H2-aSg"/>
+                        <outlet property="rightShoulderAlert" destination="cTQ-Vr-ct8" id="d5T-0w-yvH"/>
+                        <outlet property="rightShoulderSafe" destination="4Cg-4C-g6s" id="wgK-Hc-Yfw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ss9-Ha-jhE" userLabel="First Responder" sceneMemberID="firstResponder"/>

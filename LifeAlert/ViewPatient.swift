@@ -11,8 +11,10 @@ import Parse
 
 class ViewPatient: UIViewController {
 
-    @IBOutlet weak var leftShoulder: UIButton!
+    @IBOutlet weak var leftShoulderAlert: UIButton!
     @IBOutlet weak var leftShoulderSafe: UIButton!
+    @IBOutlet weak var rightShoulderAlert: UIButton!
+    @IBOutlet weak var rightShoulderSafe: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,22 +37,20 @@ class ViewPatient: UIViewController {
         query.getObjectInBackgroundWithId("MHBL7V0tYU") {
             (myPatient: PFObject?, error: NSError?) -> Void in
             if error == nil && myPatient != nil {
-                //print(myPatient)
-//                self.name.text = myPatient!["name"] as? String
-//                self.age.text = myPatient!["age"] as? String
-//                self.left.text = myPatient!["left"] as? String
-//                self.right.text = myPatient!["right"] as? String
                 if (myPatient!["left"] as? String == "Check-Pressure") {
-                    print("Left shoulder pressured")
-                    //self.leftShoulder.backgroundColor = UIColor(patternImage: UIImage(named: "alert_indicator")!)
-                    self.leftShoulder.hidden = false
+                    self.leftShoulderAlert.hidden = false
                     self.leftShoulderSafe.hidden = true;
-                    
                 } else {
-                    print("Left shoulder not pressured")
-                    //self.leftShoulder.backgroundColor = UIColor(patternImage: UIImage(named: "safe_indicator")!)
-                    self.leftShoulder.hidden = true
+                    self.leftShoulderAlert.hidden = true
                     self.leftShoulderSafe.hidden = false
+                }
+                
+                if (myPatient!["right"] as? String == "Check-Pressure") {
+                    self.rightShoulderAlert.hidden = false
+                    self.rightShoulderSafe.hidden = true;
+                } else {
+                    self.rightShoulderAlert.hidden = true
+                    self.rightShoulderSafe.hidden = false
                 }
             } else {
                 print(error)

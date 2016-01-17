@@ -20,13 +20,15 @@ class ViewPatient: UIViewController {
     @IBOutlet weak var leftBackAlert: UIButton!
     @IBOutlet weak var rightBackSafe: UIButton!
     @IBOutlet weak var rightBackAlert: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         navigationController?.navigationBar.barTintColor = UIColor(red: 0.169, green: 0.729, blue: 0.573, alpha: 1)
-        //navigationController?.navigationBar.titleTextAttributes = [UItextAtt]
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-
+        
+        
+        let myFirstTimer : NSTimer = NSTimer.scheduledTimerWithTimeInterval(0, target: self, selector: Selector("fetchAllObjects:"), userInfo: nil, repeats: false)
+        
         let myTimer : NSTimer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("fetchAllObjects:"), userInfo: nil, repeats: true)
         
         // Do any additional setup after loading the view.

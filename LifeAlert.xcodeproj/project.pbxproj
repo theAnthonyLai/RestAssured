@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CB18012F1C4AEDC800AC15A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB18012E1C4AEDC800AC15A8 /* AppDelegate.swift */; };
-		CB1801311C4AEDC800AC15A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1801301C4AEDC800AC15A8 /* ViewController.swift */; };
 		CB1801341C4AEDC800AC15A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1801321C4AEDC800AC15A8 /* Main.storyboard */; };
 		CB1801361C4AEDC800AC15A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB1801351C4AEDC800AC15A8 /* Assets.xcassets */; };
 		CB1801391C4AEDC800AC15A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1801371C4AEDC800AC15A8 /* LaunchScreen.storyboard */; };
@@ -49,7 +48,6 @@
 /* Begin PBXFileReference section */
 		CB18012B1C4AEDC800AC15A8 /* LifeAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB18012E1C4AEDC800AC15A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB1801301C4AEDC800AC15A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB1801331C4AEDC800AC15A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB1801351C4AEDC800AC15A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB1801381C4AEDC800AC15A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				CB18012E1C4AEDC800AC15A8 /* AppDelegate.swift */,
-				CB1801301C4AEDC800AC15A8 /* ViewController.swift */,
 				CB1801321C4AEDC800AC15A8 /* Main.storyboard */,
 				CB1801751C4B142300AC15A8 /* ViewPatient.swift */,
 				CB1801351C4AEDC800AC15A8 /* Assets.xcassets */,
@@ -319,7 +316,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB1801761C4B142300AC15A8 /* ViewPatient.swift in Sources */,
-				CB1801311C4AEDC800AC15A8 /* ViewController.swift in Sources */,
 				CB18012F1C4AEDC800AC15A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,6 +26,7 @@
 		CB18016F1C4AEEAF00AC15A8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB18016E1C4AEEAF00AC15A8 /* SystemConfiguration.framework */; };
 		CB1801711C4AEEB900AC15A8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1801701C4AEEB900AC15A8 /* libz.tbd */; };
 		CB1801731C4AEEC400AC15A8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1801721C4AEEC400AC15A8 /* libsqlite3.tbd */; };
+		CB1801761C4B142300AC15A8 /* ViewPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1801751C4B142300AC15A8 /* ViewPatient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		CB18016E1C4AEEAF00AC15A8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CB1801701C4AEEB900AC15A8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		CB1801721C4AEEC400AC15A8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CB1801751C4B142300AC15A8 /* ViewPatient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPatient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				CB18012E1C4AEDC800AC15A8 /* AppDelegate.swift */,
 				CB1801301C4AEDC800AC15A8 /* ViewController.swift */,
 				CB1801321C4AEDC800AC15A8 /* Main.storyboard */,
+				CB1801751C4B142300AC15A8 /* ViewPatient.swift */,
 				CB1801351C4AEDC800AC15A8 /* Assets.xcassets */,
 				CB1801371C4AEDC800AC15A8 /* LaunchScreen.storyboard */,
 				CB18013A1C4AEDC800AC15A8 /* Info.plist */,
@@ -315,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1801761C4B142300AC15A8 /* ViewPatient.swift in Sources */,
 				CB1801311C4AEDC800AC15A8 /* ViewController.swift in Sources */,
 				CB18012F1C4AEDC800AC15A8 /* AppDelegate.swift in Sources */,
 			);

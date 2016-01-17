@@ -17,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        //  Status Bar color
+        //  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
         // Override point for customization after application launch.
         // Initialize Parse.
         Parse.setApplicationId("OwMAMGp94OZ6ipPrgan8zrmvfbqFGF2P1ziT7BRc",

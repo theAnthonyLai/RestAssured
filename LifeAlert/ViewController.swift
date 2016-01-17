@@ -54,6 +54,10 @@ class ViewController: UIViewController {
         let myTimer : NSTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateData:"), userInfo: nil, repeats: true)
     }
     
+    @IBAction func performSegue(sender: UIButton) {
+        self.performSegueWithIdentifier("showViewPatient", sender: self)
+        
+    }
     
     
     

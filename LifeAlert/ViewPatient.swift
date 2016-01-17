@@ -27,7 +27,7 @@ class ViewPatient: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
         
-        //let myTimer : NSTimer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("fetchAllObjects:"), userInfo: nil, repeats: true)
+        let myTimer : NSTimer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("fetchAllObjects:"), userInfo: nil, repeats: true)
         
         //2BBA92
         // Do any additional setup after loading the view.

@@ -92,7 +92,19 @@ class ViewPatient: UIViewController {
             if (myPatient!["leftShoulder"] as? String == "Check-Pressure") {
                 AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 self.leftShoulderAlert.hidden = false
-                self.leftShoulderSafe.hidden = true;
+                UIView.animateWithDuration(0.8, delay: 0.2, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                    self.leftShoulderAlert.alpha = 0.1
+                    }, completion: {
+                        (value: Bool) in
+                        UIView.animateWithDuration(0.8, delay: 0.2, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                            self.leftShoulderAlert.alpha = 1.0
+                        }, completion: nil)
+                })
+//                UIView.animateWithDuration(0.8, delay: 0.2, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+//                    self.leftShoulderAlert.alpha = 1.0
+//                    print("B")
+//                    }, completion: nil)
+                self.leftShoulderSafe.hidden = true
             } else {
                 self.leftShoulderAlert.hidden = true
                 self.leftShoulderSafe.hidden = false
@@ -101,7 +113,7 @@ class ViewPatient: UIViewController {
             if (myPatient!["rightShoulder"] as? String == "Check-Pressure") {
                 AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 self.rightShoulderAlert.hidden = false
-                self.rightShoulderSafe.hidden = true;
+                self.rightShoulderSafe.hidden = true
             } else {
                 self.rightShoulderAlert.hidden = true
                 self.rightShoulderSafe.hidden = false
@@ -110,7 +122,7 @@ class ViewPatient: UIViewController {
             if (myPatient!["leftBack"] as? String == "Check-Pressure") {
                 AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 self.leftBackAlert.hidden = false
-                self.leftBackSafe.hidden = true;
+                self.leftBackSafe.hidden = true
             } else {
                 self.leftBackAlert.hidden = true
                 self.leftBackSafe.hidden = false
@@ -119,7 +131,7 @@ class ViewPatient: UIViewController {
             if (myPatient!["rightBack"] as? String == "Check-Pressure") {
                 AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 self.rightBackAlert.hidden = false
-                self.rightBackSafe.hidden = true;
+                self.rightBackSafe.hidden = true
             } else {
                 self.rightBackAlert.hidden = true
                 self.rightBackSafe.hidden = false

@@ -12,14 +12,14 @@ import AudioToolbox
 
 class ViewPatient: UIViewController {
 
-    @IBOutlet weak var leftShoulderAlert: UIButton!
-    @IBOutlet weak var leftShoulderSafe: UIButton!
-    @IBOutlet weak var rightShoulderAlert: UIButton!
-    @IBOutlet weak var rightShoulderSafe: UIButton!
-    @IBOutlet weak var leftBackSafe: UIButton!
-    @IBOutlet weak var leftBackAlert: UIButton!
-    @IBOutlet weak var rightBackSafe: UIButton!
-    @IBOutlet weak var rightBackAlert: UIButton!
+    @IBOutlet weak var leftShoulderSafe: UIImageView!
+    @IBOutlet weak var leftShoulderAlert: UIImageView!
+    @IBOutlet weak var rightShoulderSafe: UIImageView!
+    @IBOutlet weak var rightShoulderAlert: UIImageView!
+    @IBOutlet weak var leftBackSafe: UIImageView!
+    @IBOutlet weak var leftBackAlert: UIImageView!
+    @IBOutlet weak var rightBackSafe: UIImageView!
+    @IBOutlet weak var rightBackAlert: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

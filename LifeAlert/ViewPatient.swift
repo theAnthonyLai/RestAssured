@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import AudioToolbox
 
 class ViewPatient: UIViewController {
 
@@ -26,7 +27,7 @@ class ViewPatient: UIViewController {
         //navigationController?.navigationBar.titleTextAttributes = [UItextAtt]
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
-        
+//        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
         let myTimer : NSTimer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("fetchAllObjects:"), userInfo: nil, repeats: true)
         
         //2BBA92
@@ -52,6 +53,7 @@ class ViewPatient: UIViewController {
                 }
                 
                 if (myPatient!["rightShoulder"] as? String == "Check-Pressure") {
+                    
                     self.rightShoulderAlert.hidden = false
                     self.rightShoulderSafe.hidden = true;
                 } else {
@@ -88,6 +90,7 @@ class ViewPatient: UIViewController {
         query.getFirstObjectInBackgroundWithBlock {
             (myPatient: PFObject?, error: NSError?) -> Void in
             if (myPatient!["leftShoulder"] as? String == "Check-Pressure") {
+                AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 self.leftShoulderAlert.hidden = false
                 self.leftShoulderSafe.hidden = true;
             } else {
@@ -96,6 +99,7 @@ class ViewPatient: UIViewController {
             }
             
             if (myPatient!["rightShoulder"] as? String == "Check-Pressure") {
+                AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 self.rightShoulderAlert.hidden = false
                 self.rightShoulderSafe.hidden = true;
             } else {
@@ -104,6 +108,7 @@ class ViewPatient: UIViewController {
             }
             
             if (myPatient!["leftBack"] as? String == "Check-Pressure") {
+                AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 self.leftBackAlert.hidden = false
                 self.leftBackSafe.hidden = true;
             } else {
@@ -112,6 +117,7 @@ class ViewPatient: UIViewController {
             }
             
             if (myPatient!["rightBack"] as? String == "Check-Pressure") {
+                AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 self.rightBackAlert.hidden = false
                 self.rightBackSafe.hidden = true;
             } else {

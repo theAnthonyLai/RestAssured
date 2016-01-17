@@ -100,10 +100,6 @@ class ViewPatient: UIViewController {
                             self.leftShoulderAlert.alpha = 1.0
                         }, completion: nil)
                 })
-//                UIView.animateWithDuration(0.8, delay: 0.2, options: UIViewAnimationOptions.CurveEaseIn, animations: {
-//                    self.leftShoulderAlert.alpha = 1.0
-//                    print("B")
-//                    }, completion: nil)
                 self.leftShoulderSafe.hidden = true
             } else {
                 self.leftShoulderAlert.hidden = true
@@ -113,6 +109,14 @@ class ViewPatient: UIViewController {
             if (myPatient!["rightShoulder"] as? String == "Check-Pressure") {
                 AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 self.rightShoulderAlert.hidden = false
+                UIView.animateWithDuration(0.8, delay: 0.2, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                    self.rightShoulderAlert.alpha = 0.1
+                    }, completion: {
+                        (value: Bool) in
+                        UIView.animateWithDuration(0.8, delay: 0.2, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                            self.rightShoulderAlert.alpha = 1.0
+                            }, completion: nil)
+                })
                 self.rightShoulderSafe.hidden = true
             } else {
                 self.rightShoulderAlert.hidden = true
@@ -122,6 +126,14 @@ class ViewPatient: UIViewController {
             if (myPatient!["leftBack"] as? String == "Check-Pressure") {
                 AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 self.leftBackAlert.hidden = false
+                UIView.animateWithDuration(0.8, delay: 0.2, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                    self.leftBackAlert.alpha = 0.1
+                    }, completion: {
+                        (value: Bool) in
+                        UIView.animateWithDuration(0.8, delay: 0.2, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                            self.leftBackAlert.alpha = 1.0
+                            }, completion: nil)
+                })
                 self.leftBackSafe.hidden = true
             } else {
                 self.leftBackAlert.hidden = true
@@ -131,6 +143,14 @@ class ViewPatient: UIViewController {
             if (myPatient!["rightBack"] as? String == "Check-Pressure") {
                 AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
                 self.rightBackAlert.hidden = false
+                UIView.animateWithDuration(0.8, delay: 0.2, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                    self.rightBackAlert.alpha = 0.1
+                    }, completion: {
+                        (value: Bool) in
+                        UIView.animateWithDuration(0.8, delay: 0.2, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                            self.rightBackAlert.alpha = 1.0
+                            }, completion: nil)
+                })
                 self.rightBackSafe.hidden = true
             } else {
                 self.rightBackAlert.hidden = true

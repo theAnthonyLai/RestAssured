@@ -15,6 +15,10 @@ class ViewPatient: UIViewController {
     @IBOutlet weak var leftShoulderSafe: UIButton!
     @IBOutlet weak var rightShoulderAlert: UIButton!
     @IBOutlet weak var rightShoulderSafe: UIButton!
+    @IBOutlet weak var leftBackSafe: UIButton!
+    @IBOutlet weak var leftBackAlert: UIButton!
+    @IBOutlet weak var rightBackSafe: UIButton!
+    @IBOutlet weak var rightBackAlert: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +26,8 @@ class ViewPatient: UIViewController {
         //navigationController?.navigationBar.titleTextAttributes = [UItextAtt]
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
+        
+        let myTimer : NSTimer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("updateData:"), userInfo: nil, repeats: true)
         
         //2BBA92
         // Do any additional setup after loading the view.
@@ -33,11 +39,11 @@ class ViewPatient: UIViewController {
     }
     
     func updateData(timer : NSTimer) {
-        var query = PFQuery(className:"TestPatient")
-        query.getObjectInBackgroundWithId("MHBL7V0tYU") {
+        var query = PFQuery(className:"TestPatient1")
+        query.getObjectInBackgroundWithId("1U0A71XRvn") {
             (myPatient: PFObject?, error: NSError?) -> Void in
             if error == nil && myPatient != nil {
-                if (myPatient!["left"] as? String == "Check-Pressure") {
+                if (myPatient!["leftShoulder"] as? String == "Check-Pressure") {
                     self.leftShoulderAlert.hidden = false
                     self.leftShoulderSafe.hidden = true;
                 } else {
@@ -45,13 +51,31 @@ class ViewPatient: UIViewController {
                     self.leftShoulderSafe.hidden = false
                 }
                 
-                if (myPatient!["right"] as? String == "Check-Pressure") {
+                if (myPatient!["rightShoulder"] as? String == "Check-Pressure") {
                     self.rightShoulderAlert.hidden = false
                     self.rightShoulderSafe.hidden = true;
                 } else {
                     self.rightShoulderAlert.hidden = true
                     self.rightShoulderSafe.hidden = false
                 }
+                
+                if (myPatient!["leftBack"] as? String == "Check-Pressure") {
+                    self.leftBackAlert.hidden = false
+                    self.leftBackSafe.hidden = true;
+                } else {
+                    self.leftBackAlert.hidden = true
+                    self.leftBackSafe.hidden = false
+                }
+                
+                if (myPatient!["rightBack"] as? String == "Check-Pressure") {
+                    self.rightBackAlert.hidden = false
+                    self.rightBackSafe.hidden = true;
+                } else {
+                    self.rightBackAlert.hidden = true
+                    self.rightBackSafe.hidden = false
+                }
+
+                
             } else {
                 print(error)
             }
@@ -60,7 +84,7 @@ class ViewPatient: UIViewController {
 
     
     @IBAction func leftShoulderPressed(sender: UIButton) {
-        let myTimer : NSTimer = NSTimer.scheduledTimerWithTimeInterval(4, target: self, selector: Selector("updateData:"), userInfo: nil, repeats: true)
+//        let myTimer : NSTimer = NSTimer.scheduledTimerWithTimeInterval(4, target: self, selector: Selector("updateData:"), userInfo: nil, repeats: true)
     }
 
     

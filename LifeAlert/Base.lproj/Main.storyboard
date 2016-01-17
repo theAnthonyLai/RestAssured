@@ -251,16 +251,78 @@
                                     <action selector="leftShoulderPressed:" destination="gAO-Wh-Jn5" eventType="touchUpInside" id="kyT-eV-Uey"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTQ-Vr-ct8">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="LOG-bi-GWL"/>
+                                    <constraint firstAttribute="height" constant="40" id="qz4-vL-S6E"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="saE-3R-xzL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="u2A-qg-Czz"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="alert_indicator"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LOG-bi-GWL"/>
+                                        <exclude reference="qz4-vL-S6E"/>
+                                        <exclude reference="saE-3R-xzL"/>
+                                        <exclude reference="u2A-qg-Czz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="LOG-bi-GWL"/>
+                                        <include reference="qz4-vL-S6E"/>
+                                        <include reference="saE-3R-xzL"/>
+                                        <include reference="u2A-qg-Czz"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="leftShoulderPressed:" destination="gAO-Wh-Jn5" eventType="touchUpInside" id="3qH-vP-HZf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMF-6L-yfl">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="Ico-Yo-nrh"/>
+                                    <constraint firstAttribute="height" constant="40" id="c66-mY-iDh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="gpH-mS-mQp"/>
+                                    <constraint firstAttribute="width" constant="40" id="q5c-XN-hNq"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="safe_indicator"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ico-Yo-nrh"/>
+                                        <exclude reference="c66-mY-iDh"/>
+                                        <exclude reference="gpH-mS-mQp"/>
+                                        <exclude reference="q5c-XN-hNq"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Ico-Yo-nrh"/>
+                                        <include reference="c66-mY-iDh"/>
+                                        <include reference="gpH-mS-mQp"/>
+                                        <include reference="q5c-XN-hNq"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="leftShoulderPressed:" destination="gAO-Wh-Jn5" eventType="touchUpInside" id="lgm-hB-zkd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="OMF-6L-yfl" firstAttribute="leading" secondItem="BHl-T3-Hgo" secondAttribute="leadingMargin" constant="83" id="213-Tf-gTm"/>
                             <constraint firstItem="R7t-3S-QX9" firstAttribute="top" secondItem="URq-a0-nco" secondAttribute="bottom" id="Ldt-Ow-LDL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="URq-a0-nco" secondAttribute="trailing" constant="-20" id="Up5-dT-anA"/>
+                            <constraint firstItem="cTQ-Vr-ct8" firstAttribute="top" secondItem="kMG-S2-cf2" secondAttribute="bottom" constant="146" id="Upw-dQ-Kfi"/>
                             <constraint firstItem="URq-a0-nco" firstAttribute="top" secondItem="BHl-T3-Hgo" secondAttribute="topMargin" id="V24-2W-4ov"/>
                             <constraint firstItem="u98-aC-Mog" firstAttribute="top" secondItem="kMG-S2-cf2" secondAttribute="bottom" constant="216" id="d8S-dE-nNq">
                                 <variation key="heightClass=regular-widthClass=compact" constant="146"/>
                             </constraint>
                             <constraint firstItem="URq-a0-nco" firstAttribute="leading" secondItem="BHl-T3-Hgo" secondAttribute="leadingMargin" constant="-20" id="mgR-40-qsF"/>
+                            <constraint firstItem="OMF-6L-yfl" firstAttribute="top" secondItem="kMG-S2-cf2" secondAttribute="bottom" constant="146" id="nyB-Hx-BFt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cTQ-Vr-ct8" secondAttribute="trailing" constant="82" id="st9-FQ-PW1"/>
                             <constraint firstItem="u98-aC-Mog" firstAttribute="leading" secondItem="BHl-T3-Hgo" secondAttribute="leadingMargin" constant="77" id="t10-mX-aCA">
                                 <variation key="heightClass=regular-widthClass=compact" constant="83"/>
                             </constraint>
@@ -269,13 +331,19 @@
                             <mask key="subviews">
                                 <exclude reference="URq-a0-nco"/>
                                 <exclude reference="u98-aC-Mog"/>
+                                <exclude reference="cTQ-Vr-ct8"/>
+                                <exclude reference="OMF-6L-yfl"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Up5-dT-anA"/>
                                 <exclude reference="V24-2W-4ov"/>
                                 <exclude reference="mgR-40-qsF"/>
+                                <exclude reference="213-Tf-gTm"/>
+                                <exclude reference="nyB-Hx-BFt"/>
                                 <exclude reference="d8S-dE-nNq"/>
                                 <exclude reference="t10-mX-aCA"/>
+                                <exclude reference="Upw-dQ-Kfi"/>
+                                <exclude reference="st9-FQ-PW1"/>
                                 <exclude reference="Ldt-Ow-LDL"/>
                             </mask>
                         </variation>
@@ -283,13 +351,19 @@
                             <mask key="subviews">
                                 <include reference="URq-a0-nco"/>
                                 <include reference="u98-aC-Mog"/>
+                                <include reference="cTQ-Vr-ct8"/>
+                                <include reference="OMF-6L-yfl"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Up5-dT-anA"/>
                                 <include reference="V24-2W-4ov"/>
                                 <include reference="mgR-40-qsF"/>
+                                <include reference="213-Tf-gTm"/>
+                                <include reference="nyB-Hx-BFt"/>
                                 <include reference="d8S-dE-nNq"/>
                                 <include reference="t10-mX-aCA"/>
+                                <include reference="Upw-dQ-Kfi"/>
+                                <include reference="st9-FQ-PW1"/>
                                 <include reference="Ldt-Ow-LDL"/>
                             </mask>
                         </variation>
@@ -297,6 +371,7 @@
                     <navigationItem key="navigationItem" title="View Patient" id="cTW-9w-u2f"/>
                     <connections>
                         <outlet property="leftShoulder" destination="u98-aC-Mog" id="tw0-RS-j3l"/>
+                        <outlet property="leftShoulderSafe" destination="OMF-6L-yfl" id="FVb-H2-aSg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ss9-Ha-jhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -325,5 +400,6 @@
     <resources>
         <image name="alert_indicator" width="78" height="78"/>
         <image name="body_background" width="1125" height="2001"/>
+        <image name="safe_indicator" width="78" height="78"/>
     </resources>
 </document>

@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Parse
 
 class ViewPatient: UIViewController {
 
     @IBOutlet weak var leftShoulder: UIButton!
+    @IBOutlet weak var leftShoulderSafe: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,7 +30,37 @@ class ViewPatient: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func updateData(timer : NSTimer) {
+        var query = PFQuery(className:"TestPatient")
+        query.getObjectInBackgroundWithId("MHBL7V0tYU") {
+            (myPatient: PFObject?, error: NSError?) -> Void in
+            if error == nil && myPatient != nil {
+                //print(myPatient)
+//                self.name.text = myPatient!["name"] as? String
+//                self.age.text = myPatient!["age"] as? String
+//                self.left.text = myPatient!["left"] as? String
+//                self.right.text = myPatient!["right"] as? String
+                if (myPatient!["left"] as? String == "Check-Pressure") {
+                    print("Left shoulder pressured")
+                    //self.leftShoulder.backgroundColor = UIColor(patternImage: UIImage(named: "alert_indicator")!)
+                    self.leftShoulder.hidden = false
+                    self.leftShoulderSafe.hidden = true;
+                    
+                } else {
+                    print("Left shoulder not pressured")
+                    //self.leftShoulder.backgroundColor = UIColor(patternImage: UIImage(named: "safe_indicator")!)
+                    self.leftShoulder.hidden = true
+                    self.leftShoulderSafe.hidden = false
+                }
+            } else {
+                print(error)
+            }
+        }
+    }
+
+    
     @IBAction func leftShoulderPressed(sender: UIButton) {
+        let myTimer : NSTimer = NSTimer.scheduledTimerWithTimeInterval(4, target: self, selector: Selector("updateData:"), userInfo: nil, repeats: true)
     }
 
     

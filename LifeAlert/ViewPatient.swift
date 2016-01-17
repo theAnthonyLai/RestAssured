@@ -13,6 +13,12 @@ class ViewPatient: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationController?.navigationBar.barTintColor = UIColor(red: 0.169, green: 0.729, blue: 0.573, alpha: 1)
+        //navigationController?.navigationBar.titleTextAttributes = [UItextAtt]
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+        
+        //2BBA92
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +28,7 @@ class ViewPatient: UIViewController {
     }
     
 
+    
     /*
     // MARK: - Navigation
 

@@ -55,7 +55,7 @@
             BlueprintIdentifier = "CB18012A1C4AEDC800AC15A8"
             BuildableName = "LifeAlert.app"
             BlueprintName = "LifeAlert"
-            ReferencedContainer = "container:LifeAlert.xcodeproj">
+            ReferencedContainer = "container:RestAssured.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "CB18012A1C4AEDC800AC15A8"
             BuildableName = "LifeAlert.app"
             BlueprintName = "LifeAlert"
-            ReferencedContainer = "container:LifeAlert.xcodeproj">
+            ReferencedContainer = "container:RestAssured.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

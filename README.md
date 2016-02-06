@@ -13,3 +13,9 @@ Bedsores (pressure ulcers) can be fatal if left unattended and require constant 
 Connecting to Parse server, our companion iOS app updates patient's real-time status to doctors and nurses. When a particular pressure sensor detects excess amount of pressure for a set amount of time, it immediately updates the data on Parse. Our iOS companion app will then alert medical professionals with a blinking red light on the pressured part of the patient's body.
 ![Screenshots](/README_pics/screenshots.png?raw=true)
 
+### Contributors
++ Jonathan Massachi
++ Patrick Xu
++ Eric Pan
++ Francis Lin
++ Anthony Lai ([theAnthonyLai](https://github.com/theAnthonyLai))
